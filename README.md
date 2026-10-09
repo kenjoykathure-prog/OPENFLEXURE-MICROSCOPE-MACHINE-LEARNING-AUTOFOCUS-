@@ -32,8 +32,7 @@ Both models run inference on a **Raspberry Pi 4** in under 5 seconds per field o
 ## Repository Structure
 
 ```
-├── training_data/                     # Labelled image dataset (1,040 images, 8 fields of view) used for model training/testing
-├── images/                            # Raw/representative microscopy images (stained, unstained, cancer tissue)
+├── data/                     # Labelled image dataset (1,040 images, 8 fields of view) used for model training/testing
 ├── training/
 │   ├── train_svr.py                    # SVR training, grid search (C, gamma, epsilon), 5-fold CV
 │   └── train_random_forest.py          # Random Forest training, grid search (n_estimators, max_depth, min_samples_split), 5-fold CV
@@ -46,13 +45,10 @@ Both models run inference on a **Raspberry Pi 4** in under 5 seconds per field o
 │   ├── plot_stained.py                 # Figures for the Giemsa-stained blood smear results (Panel A in Figs. 1-6)
 │   ├── plot_unstained.py               # Figures for the unstained blood smear results (Panel B)
 │   └── plot_cancer_tissue.py           # Figures for the FFPE cancer tissue results (Panel C)
-├── models/                             # Serialized trained models (.pkl)
-├── results/                            # Output figures/tables (VoL, execution time, CV, relative error, CPU/RAM)
-├── requirements.txt
+├── Doc/
+│   ├── SUPPLEMENTARY.pdf               # additional material which includes the plotting data
 └── README.md
 ```
-
-> File names above are placeholders matching the four training/testing/plotting groups you described — rename them to match your actual scripts if they differ.
 
 ## Hardware Requirements
 

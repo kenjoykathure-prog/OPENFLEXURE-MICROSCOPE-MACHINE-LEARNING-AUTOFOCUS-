@@ -12,7 +12,7 @@ Machine-learning-based autofocus for OpenFlexure microscopy using Variance of La
 
 ## Overview
 
-Conventional autofocus on low-cost, embedded microscopy platforms relies on iterative axial search, which is slow and computationally expensive on resource-constrained hardware. This repository implements a **predictive, single-shot autofocus framework** for the [OpenFlexure Microscope](https://openflexure.org/) that estimates the required Z-axis correction directly from image-derived sharpness features — eliminating exhaustive z-stack search.
+Conventional autofocus on low-cost, embedded microscopy platforms relies on iterative axial search, which is slow and computationally expensive on resource-constrained hardware. This repository implements a **predictive autofocus framework** for the [OpenFlexure Microscope](https://openflexure.org/) that estimates the required Z-axis correction directly from image-derived sharpness features — eliminating exhaustive z-stack search.
 
 Two regression models are trained and compared:
 
